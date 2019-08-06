@@ -56,12 +56,12 @@ def isWordGuessed(secretWord, lettersGuessed):
             return False
     return True
 
-secretWord = 'apple'
+'''secretWord = 'apple'
 lettersGuessed1 = ['e', 'i', 'k', 'p', 'r', 's']
 print(isWordGuessed(secretWord, lettersGuessed1))
 lettersGuessed2 = ['e', 'l', 'k', 'p', 'r', 'a']
 print(isWordGuessed(secretWord, lettersGuessed2))
-
+'''
 def getGuessedWord(secretWord, lettersGuessed):
     '''
     secretWord: string, the word the user is guessing
@@ -77,10 +77,10 @@ def getGuessedWord(secretWord, lettersGuessed):
             GuessedWord += secretWord[i]
 
     return GuessedWord
-    
+'''    
 print(getGuessedWord(secretWord, lettersGuessed1))
 print(getGuessedWord(secretWord, lettersGuessed2))
-
+'''
 def getAvailableLetters(lettersGuessed):
     '''
     lettersGuessed: list, what letters have been guessed so far
@@ -94,7 +94,7 @@ def getAvailableLetters(lettersGuessed):
             AvailableLetters += a_letter
     return AvailableLetters
 
-print(getAvailableLetters(lettersGuessed1))    
+#print(getAvailableLetters(lettersGuessed1))    
 
 
 def hangman(secretWord):
